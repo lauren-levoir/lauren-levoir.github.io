@@ -3,62 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio website">
+    <meta name="description" content="Personal portfolio website showcasing my work and experience">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">YN</a>
+            <a href="#home" class="logo">Lauren LeVoir</a>
             <ul class="nav-menu">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="content">
-                <h1>I'm Your Name.</h1>
-                <div class="code-block">
-                    <div>keywords = {</div>
-                    <div class="keyword-line">
-                        <span class="indent"></span>
-                        <div class="rotating-text" id="rotating1">
-                            <span class="keyword category1 active">Online Safety;</span>
-                            <span class="keyword category1">Digital Ethics;</span>
-                            <span class="keyword category1">Tech Policy;</span>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="content">
+                    <h1>Hi, I'm Lauren LeVoir :)</h1>
+                    <div class="code-block">
+                        <div>favorites = {</div>
+                        <div class="keyword-line">
+                            <span class="indent"></span>
+                            <div class="rotating-text" id="rotating1">
+                                <span class="keyword category1 active">University of Wisconsin - Madison;</span>
+                                <span class="keyword category1">Dancing;</span>
+                                <span class="keyword category1">Continuous Learning;</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="keyword-line">
-                        <span class="indent"></span>
-                        <div class="rotating-text" id="rotating2">
-                            <span class="keyword category2 active">AI Research;</span>
-                            <span class="keyword category2">Machine Learning;</span>
-                            <span class="keyword category2">Data Science;</span>
+                        <div class="keyword-line">
+                            <span class="indent"></span>
+                            <div class="rotating-text" id="rotating2">
+                                <span class="keyword category2 active">Hiking;</span>
+                                <span class="keyword category2">Family Time;</span>
+                                <span class="keyword category2">Women in Business - Technology;</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="keyword-line">
-                        <span class="indent"></span>
-                        <div class="rotating-text" id="rotating3">
-                            <span class="keyword category3 active">Photography;</span>
-                            <span class="keyword category3">Hiking;</span>
-                            <span class="keyword category3">Coffee;</span>
+                        <div class="keyword-line">
+                            <span class="indent"></span>
+                            <div class="rotating-text" id="rotating3">
+                                <span class="keyword category3 active">Digital Ethics;</span>
+                                <span class="keyword category3">Soccer;</span>
+                                <span class="keyword category3">Computer Science;</span>
+                            </div>
                         </div>
+                        <div>}</div>
                     </div>
-                    <div>}</div>
+                    <a href="#portfolio" class="cta-button">View My Work</a>
                 </div>
-                <a href="#about" class="cta-button">Learn More</a>
+                <div class="profile-image">
+                    <img src="images/profile.png" alt="Professional headshot of Lauren LeVoir">
+                </div>
             </div>
-            <div class="profile-image">
-                <img src="images/profile.jpg" alt="Profile Photo">
+        </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container-narrow">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-photo.jpg" alt="Your Name working on a project">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web developer and designer based in Madison, Wisconsin. I love creating beautiful, functional websites that make a difference.</p>
+                    <p>With a background in computer science and a keen eye for design, I bridge the gap between technical functionality and aesthetic appeal. My work focuses on creating user-centered experiences that are both accessible and engaging.</p>
+                    <p>When I'm not coding, you can find me exploring local coffee shops, hiking the trails around Madison, or experimenting with new design techniques.</p>
+                    <div class="skills">
+                        <h3>Skills & Technologies</h3>
+                        <ul class="skills-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React & Vue.js</li>
+                            <li>Responsive Design</li>
+                            <li>Git & GitHub</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container-narrow">
+            <h2>Portfolio</h2>
+            <p class="section-intro">Here are some of my recent projects that showcase my skills and creativity.</p>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <article class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project1.jpg" alt="Screenshot of E-commerce Website project showing product gallery">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-commerce Website</h3>
+                        <p class="portfolio-description">A fully responsive online store built with React and integrated with a payment gateway. Features include product filtering, shopping cart functionality, and user authentication.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn-secondary">View Live Site</a>
+                            <a href="#" class="btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 2 -->
+                <article class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project2.jpg" alt="Screenshot of Weather Dashboard application showing forecast display">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Weather Dashboard</h3>
+                        <p class="portfolio-description">An interactive weather application that provides real-time weather data and 7-day forecasts. Features a clean interface with dynamic backgrounds that change based on weather conditions.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API Integration</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn-secondary">View Live Site</a>
+                            <a href="#" class="btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Portfolio Item 3 -->
+                <article class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/project3.jpg" alt="Screenshot of Portfolio Website redesign with modern layout">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Portfolio Redesign</h3>
+                        <p class="portfolio-description">A complete redesign of a client's portfolio website with focus on accessibility and mobile responsiveness. Improved page load speed by 60% through optimization techniques.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">SCSS</span>
+                            <span class="tag">Accessibility</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn-secondary">View Live Site</a>
+                            <a href="#" class="btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container-narrow">
+            <h2>Resume</h2>
+            <div class="resume-download">
+                <p>Download my complete resume to learn more about my experience and qualifications.</p>
+                <a href="files/resume.pdf" class="cta-button" download>Download Resume (PDF)</a>
+            </div>
+            
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p class="resume-meta">University of Wisconsin-Madison | 2020-2024</p>
+                        <p>Relevant coursework: Web Development, Database Systems, Software Engineering, UI/UX Design</p>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3>Experience</h3>
+                    <div class="resume-item">
+                        <h4>Frontend Developer</h4>
+                        <p class="resume-meta">Tech Company Inc. | June 2024 - Present</p>
+                        <ul>
+                            <li>Developed responsive web applications using React and TypeScript</li>
+                            <li>Collaborated with design team to implement user-friendly interfaces</li>
+                            <li>Improved website performance by 40% through code optimization</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Web Development Intern</h4>
+                        <p class="resume-meta">Digital Agency | Summer 2023</p>
+                        <ul>
+                            <li>Built custom WordPress themes for client websites</li>
+                            <li>Assisted in creating email marketing campaigns</li>
+                            <li>Conducted website accessibility audits and implemented improvements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3>Certifications</h3>
+                    <div class="resume-item">
+                        <ul>
+                            <li>Google UX Design Professional Certificate (2024)</li>
+                            <li>Responsive Web Design Certification - freeCodeCamp (2023)</li>
+                            <li>JavaScript Algorithms and Data Structures - freeCodeCamp (2023)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container-narrow">
+            <h2>Get In Touch</h2>
+            <p class="section-intro">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:+16085551234">(608) 555-1234</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong>
+                        <span>Madison, WI</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a>
+                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Visit my Twitter profile">Twitter</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <h3>Send Me a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-narrow">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>Built with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
+
