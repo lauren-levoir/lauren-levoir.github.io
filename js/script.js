@@ -1,4 +1,5 @@
 function rotateKeywords(containerId, interval = 2000) {
+    
     const container = document.getElementById(containerId);
     const keywords = container.querySelectorAll('.keyword');
     let currentIndex = 0;
@@ -11,9 +12,9 @@ function rotateKeywords(containerId, interval = 2000) {
 }
 
 // Initialize rotation for each line with slight offset
-rotateKeywords('rotating1', 2000);
-setTimeout(() => rotateKeywords('rotating2', 2000), 666);
-setTimeout(() => rotateKeywords('rotating3', 2000), 1333);
+rotateKeywords('rotating1', 6000);
+setTimeout(() => rotateKeywords('rotating2', 6000), 2000);
+setTimeout(() => rotateKeywords('rotating3', 6000), 4000);
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
